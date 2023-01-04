@@ -9,13 +9,13 @@
 <body>
   <h1>Mermaids around the World</h1>
   <ul>
-    <% merTypes.forEach(merType => { %>
+    <% myMerList.forEach(merType => { %>
       <li>
-        <%= todo.text %>
+        <%= merType.text %>
         -
-        <%= todo.from %>
-        -
-        <% todo.known ? 'yes' : 'no' %>
+        <%= merType.from %>
+        
+        <%= merType.known ? 'yes' : 'no' %>
       </li>
     <% }) %> 
   </ul>

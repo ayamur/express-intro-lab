@@ -1,7 +1,7 @@
 //import modules
 
 import express from 'express'
-import { merTypes } from './data/intlmermaids-data.js'
+import { merTypes } from './data/mermaids-data.js'
 
 //create express app
 
@@ -16,14 +16,14 @@ app.set('view engine', 'ejs')
 //mount routes
 
 app.get('/', function(req, res) {
-  res.redirect('/home')
+  res.redirect('/mermaids')
 })
 
 app.get('/home', function(req, res) {
   res.render('home')
 })
 
-app.get('./mermaids', function(req, res) {
+app.get('/mermaids', function(req, res) {
   res.render('mermaids/index', {
     myMerList: merTypes
   })
