@@ -1,3 +1,16 @@
 body {
   background-color: darkblue;
+  font-family: 'Splash', cursive;
+  color: rgb(32, 190, 138);
+  font-size: 50px;
+}
+
+.button {
+  font-family: 'Splash', cursive;
+  background-color:  rgb(32, 190, 138);
+  color: white;
+  border: 1px dotted;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 25px;
 }
