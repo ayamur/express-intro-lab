@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A list of some worldwide mermaids</title>
+</head>
+<body>
+  <h1>Mermaids around the World</h1>
+  <ul>
+    <% merTypes.forEach(merType => { %>
+      <li>
+        <%= todo.text %>
+        -
+        <%= todo.from %>
+        -
+        <% todo.known ? 'yes' : 'no' %>
+      </li>
+    <% }) %> 
+  </ul>
+</body>
+</html>
