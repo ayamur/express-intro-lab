@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+    embed { display: none; }
+    button:active + embed { display: block; }
+  </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Well Met!</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
   <h1>Well Met!</h1>
   <p>Click the button to continue</p>
-  <button>I am a button! Click me!</button>
+  <!-- <audio id="splash" src="../assets/sfx/SPLASH.WAV" preload="auto"></audio> -->
+  <a href="/mermaids">
+    <button onclick="document.getElementById('splash').play();" id="tomermaids" class="button">I am a button! Click me!
+    </button>
+  </a>
 </body>
 </html>
